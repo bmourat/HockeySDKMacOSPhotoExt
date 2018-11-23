@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80A575B021A82B5700A325F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A575AF21A82B5700A325F9 /* AppDelegate.m */; };
+		80A575B321A82B5700A325F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A575B221A82B5700A325F9 /* ViewController.m */; };
+		80A575B521A82B5900A325F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A575B421A82B5900A325F9 /* Assets.xcassets */; };
+		80A575B821A82B5900A325F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A575B621A82B5900A325F9 /* Main.storyboard */; };
+		80A575BB21A82B5900A325F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A575BA21A82B5900A325F9 /* main.m */; };
+		80A575C821A82D5B00A325F9 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A575C721A82D5B00A325F9 /* Photos.framework */; };
+		80A575CA21A82D5B00A325F9 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A575C921A82D5B00A325F9 /* PhotosUI.framework */; };
+		80A575CE21A82D5B00A325F9 /* PhotoProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A575CD21A82D5B00A325F9 /* PhotoProjectViewController.m */; };
+		80A575D121A82D5B00A325F9 /* ProjectTypeDescriptionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A575D021A82D5B00A325F9 /* ProjectTypeDescriptionDataSource.m */; };
+		80A575D421A82D5B00A325F9 /* PhotoProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A575D221A82D5B00A325F9 /* PhotoProjectViewController.xib */; };
+		80A575D921A82D5B00A325F9 /* PhotosExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 80A575C621A82D5B00A325F9 /* PhotosExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95C655B3F7085DE4C81996BF /* libPods-MacOSHockeyExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 450CE0E694D4501C5C4D41DA /* libPods-MacOSHockeyExtension.a */; };
+		CDCEEDE69C9F73895264813C /* libPods-PhotosExt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3008F820E27B658345F7DC95 /* libPods-PhotosExt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80A575D721A82D5B00A325F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80A575A321A82B5700A325F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A575C521A82D5B00A325F9;
+			remoteInfo = PhotosExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80A575DD21A82D5B00A325F9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				80A575D921A82D5B00A325F9 /* PhotosExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3008F820E27B658345F7DC95 /* libPods-PhotosExt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotosExt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3852831092BA73E9D09D575B /* Pods-PhotosExt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosExt.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotosExt/Pods-PhotosExt.release.xcconfig"; sourceTree = "<group>"; };
+		450CE0E694D4501C5C4D41DA /* libPods-MacOSHockeyExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MacOSHockeyExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5799F5AB26F3D78573D9006C /* Pods-PhotosExt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosExt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotosExt/Pods-PhotosExt.debug.xcconfig"; sourceTree = "<group>"; };
+		63338540A6CC2B831F21178A /* Pods-MacOSHockeyExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacOSHockeyExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MacOSHockeyExtension/Pods-MacOSHockeyExtension.release.xcconfig"; sourceTree = "<group>"; };
+		80A575AB21A82B5700A325F9 /* MacOSHockeyExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOSHockeyExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A575AE21A82B5700A325F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80A575AF21A82B5700A325F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80A575B121A82B5700A325F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		80A575B221A82B5700A325F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		80A575B421A82B5900A325F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80A575B721A82B5900A325F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80A575B921A82B5900A325F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A575BA21A82B5900A325F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80A575BC21A82B5900A325F9 /* MacOSHockeyExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOSHockeyExtension.entitlements; sourceTree = "<group>"; };
+		80A575C621A82D5B00A325F9 /* PhotosExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotosExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A575C721A82D5B00A325F9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		80A575C921A82D5B00A325F9 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		80A575CC21A82D5B00A325F9 /* PhotoProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoProjectViewController.h; sourceTree = "<group>"; };
+		80A575CD21A82D5B00A325F9 /* PhotoProjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoProjectViewController.m; sourceTree = "<group>"; };
+		80A575CF21A82D5B00A325F9 /* ProjectTypeDescriptionDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectTypeDescriptionDataSource.h; sourceTree = "<group>"; };
+		80A575D021A82D5B00A325F9 /* ProjectTypeDescriptionDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectTypeDescriptionDataSource.m; sourceTree = "<group>"; };
+		80A575D321A82D5B00A325F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PhotoProjectViewController.xib; sourceTree = "<group>"; };
+		80A575D521A82D5B00A325F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A575D621A82D5B00A325F9 /* PhotosExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotosExt.entitlements; sourceTree = "<group>"; };
+		96E4F217901874A4C66E37E3 /* Pods-MacOSHockeyExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacOSHockeyExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MacOSHockeyExtension/Pods-MacOSHockeyExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80A575A821A82B5700A325F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C655B3F7085DE4C81996BF /* libPods-MacOSHockeyExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A575C321A82D5B00A325F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A575C821A82D5B00A325F9 /* Photos.framework in Frameworks */,
+				80A575CA21A82D5B00A325F9 /* PhotosUI.framework in Frameworks */,
+				CDCEEDE69C9F73895264813C /* libPods-PhotosExt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310C13C9F0D37D913A40A5A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96E4F217901874A4C66E37E3 /* Pods-MacOSHockeyExtension.debug.xcconfig */,
+				63338540A6CC2B831F21178A /* Pods-MacOSHockeyExtension.release.xcconfig */,
+				5799F5AB26F3D78573D9006C /* Pods-PhotosExt.debug.xcconfig */,
+				3852831092BA73E9D09D575B /* Pods-PhotosExt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80A575A221A82B5700A325F9 = {
+			isa = PBXGroup;
+			children = (
+				80A575AD21A82B5700A325F9 /* MacOSHockeyExtension */,
+				80A575CB21A82D5B00A325F9 /* PhotosExt */,
+				80A575AC21A82B5700A325F9 /* Products */,
+				310C13C9F0D37D913A40A5A5 /* Pods */,
+				F12FAE5B4A060F33BBDCBBB4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80A575AC21A82B5700A325F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80A575AB21A82B5700A325F9 /* MacOSHockeyExtension.app */,
+				80A575C621A82D5B00A325F9 /* PhotosExt.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80A575AD21A82B5700A325F9 /* MacOSHockeyExtension */ = {
+			isa = PBXGroup;
+			children = (
+				80A575AE21A82B5700A325F9 /* AppDelegate.h */,
+				80A575AF21A82B5700A325F9 /* AppDelegate.m */,
+				80A575B121A82B5700A325F9 /* ViewController.h */,
+				80A575B221A82B5700A325F9 /* ViewController.m */,
+				80A575B421A82B5900A325F9 /* Assets.xcassets */,
+				80A575B621A82B5900A325F9 /* Main.storyboard */,
+				80A575B921A82B5900A325F9 /* Info.plist */,
+				80A575BA21A82B5900A325F9 /* main.m */,
+				80A575BC21A82B5900A325F9 /* MacOSHockeyExtension.entitlements */,
+			);
+			path = MacOSHockeyExtension;
+			sourceTree = "<group>";
+		};
+		80A575CB21A82D5B00A325F9 /* PhotosExt */ = {
+			isa = PBXGroup;
+			children = (
+				80A575CC21A82D5B00A325F9 /* PhotoProjectViewController.h */,
+				80A575CD21A82D5B00A325F9 /* PhotoProjectViewController.m */,
+				80A575CF21A82D5B00A325F9 /* ProjectTypeDescriptionDataSource.h */,
+				80A575D021A82D5B00A325F9 /* ProjectTypeDescriptionDataSource.m */,
+				80A575D221A82D5B00A325F9 /* PhotoProjectViewController.xib */,
+				80A575D521A82D5B00A325F9 /* Info.plist */,
+				80A575D621A82D5B00A325F9 /* PhotosExt.entitlements */,
+			);
+			path = PhotosExt;
+			sourceTree = "<group>";
+		};
+		F12FAE5B4A060F33BBDCBBB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				450CE0E694D4501C5C4D41DA /* libPods-MacOSHockeyExtension.a */,
+				80A575C721A82D5B00A325F9 /* Photos.framework */,
+				80A575C921A82D5B00A325F9 /* PhotosUI.framework */,
+				3008F820E27B658345F7DC95 /* libPods-PhotosExt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80A575AA21A82B5700A325F9 /* MacOSHockeyExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A575BF21A82B5900A325F9 /* Build configuration list for PBXNativeTarget "MacOSHockeyExtension" */;
+			buildPhases = (
+				368302C3F6BCEC63C9E77629 /* [CP] Check Pods Manifest.lock */,
+				80A575A721A82B5700A325F9 /* Sources */,
+				80A575A821A82B5700A325F9 /* Frameworks */,
+				80A575A921A82B5700A325F9 /* Resources */,
+				DA8D91AC9384D3F2F44135F1 /* [CP] Embed Pods Frameworks */,
+				2A878D84DAA567AA9CF6CB76 /* [CP] Copy Pods Resources */,
+				80A575DD21A82D5B00A325F9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80A575D821A82D5B00A325F9 /* PBXTargetDependency */,
+			);
+			name = MacOSHockeyExtension;
+			productName = MacOSHockeyExtension;
+			productReference = 80A575AB21A82B5700A325F9 /* MacOSHockeyExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80A575C521A82D5B00A325F9 /* PhotosExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A575DA21A82D5B00A325F9 /* Build configuration list for PBXNativeTarget "PhotosExt" */;
+			buildPhases = (
+				8C12B1EA337B431DB4F11A67 /* [CP] Check Pods Manifest.lock */,
+				80A575C221A82D5B00A325F9 /* Sources */,
+				80A575C321A82D5B00A325F9 /* Frameworks */,
+				80A575C421A82D5B00A325F9 /* Resources */,
+				1DEE5849AA1070B23BC69709 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotosExt;
+			productName = PhotosExt;
+			productReference = 80A575C621A82D5B00A325F9 /* PhotosExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80A575A321A82B5700A325F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Murat Baysangurov";
+				TargetAttributes = {
+					80A575AA21A82B5700A325F9 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					80A575C521A82D5B00A325F9 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 80A575A621A82B5700A325F9 /* Build configuration list for PBXProject "MacOSHockeyExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80A575A221A82B5700A325F9;
+			productRefGroup = 80A575AC21A82B5700A325F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80A575AA21A82B5700A325F9 /* MacOSHockeyExtension */,
+				80A575C521A82D5B00A325F9 /* PhotosExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80A575A921A82B5700A325F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A575B521A82B5900A325F9 /* Assets.xcassets in Resources */,
+				80A575B821A82B5900A325F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A575C421A82D5B00A325F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A575D421A82D5B00A325F9 /* PhotoProjectViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DEE5849AA1070B23BC69709 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PhotosExt/Pods-PhotosExt-resources.sh",
+				"${PODS_ROOT}/HockeySDK-Mac/HockeySDK-Mac/HockeySDK.framework",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HockeySDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotosExt/Pods-PhotosExt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A878D84DAA567AA9CF6CB76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MacOSHockeyExtension/Pods-MacOSHockeyExtension-resources.sh",
+				"${PODS_ROOT}/HockeySDK-Mac/HockeySDK-Mac/HockeySDK.framework",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HockeySDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MacOSHockeyExtension/Pods-MacOSHockeyExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		368302C3F6BCEC63C9E77629 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacOSHockeyExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C12B1EA337B431DB4F11A67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotosExt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8D91AC9384D3F2F44135F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MacOSHockeyExtension/Pods-MacOSHockeyExtension-frameworks.sh",
+				"${PODS_ROOT}/HockeySDK-Mac/HockeySDK-Mac/HockeySDK.framework",
+				"${PODS_ROOT}/HockeySDK-Mac/HockeySDK-Mac/HockeySDK.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HockeySDK.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/HockeySDK.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MacOSHockeyExtension/Pods-MacOSHockeyExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80A575A721A82B5700A325F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A575B321A82B5700A325F9 /* ViewController.m in Sources */,
+				80A575BB21A82B5900A325F9 /* main.m in Sources */,
+				80A575B021A82B5700A325F9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A575C221A82D5B00A325F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A575CE21A82D5B00A325F9 /* PhotoProjectViewController.m in Sources */,
+				80A575D121A82D5B00A325F9 /* ProjectTypeDescriptionDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80A575D821A82D5B00A325F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80A575C521A82D5B00A325F9 /* PhotosExt */;
+			targetProxy = 80A575D721A82D5B00A325F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80A575B621A82B5900A325F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A575B721A82B5900A325F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80A575D221A82D5B00A325F9 /* PhotoProjectViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A575D321A82D5B00A325F9 /* Base */,
+			);
+			name = PhotoProjectViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80A575BD21A82B5900A325F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		80A575BE21A82B5900A325F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		80A575C021A82B5900A325F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E4F217901874A4C66E37E3 /* Pods-MacOSHockeyExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacOSHockeyExtension/MacOSHockeyExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacOSHockeyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bmourat.MacOSHockeyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80A575C121A82B5900A325F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63338540A6CC2B831F21178A /* Pods-MacOSHockeyExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacOSHockeyExtension/MacOSHockeyExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacOSHockeyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bmourat.MacOSHockeyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		80A575DB21A82D5B00A325F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5799F5AB26F3D78573D9006C /* Pods-PhotosExt.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotosExt/PhotosExt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotosExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bmourat.MacOSHockeyExtension.PhotosExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		80A575DC21A82D5B00A325F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3852831092BA73E9D09D575B /* Pods-PhotosExt.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotosExt/PhotosExt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotosExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bmourat.MacOSHockeyExtension.PhotosExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80A575A621A82B5700A325F9 /* Build configuration list for PBXProject "MacOSHockeyExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A575BD21A82B5900A325F9 /* Debug */,
+				80A575BE21A82B5900A325F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A575BF21A82B5900A325F9 /* Build configuration list for PBXNativeTarget "MacOSHockeyExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A575C021A82B5900A325F9 /* Debug */,
+				80A575C121A82B5900A325F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A575DA21A82D5B00A325F9 /* Build configuration list for PBXNativeTarget "PhotosExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A575DB21A82D5B00A325F9 /* Debug */,
+				80A575DC21A82D5B00A325F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80A575A321A82B5700A325F9 /* Project object */;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PhotoProjectViewController">
+            <connections>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="327"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNc-0i-CWK">
+                    <rect key="frame" x="168" y="336" width="182" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="My Photo Project Extension" id="0xp-rC-2gr">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-O4-ryt">
+                    <rect key="frame" x="177" y="146" width="98" height="32"/>
+                    <buttonCell key="cell" type="push" title="Crash Me" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vy1-If-0Ub">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="crashMe:" target="-2" id="8zC-Tn-2cP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qAs-O4-ryt" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="K7A-jd-OZ2"/>
+                <constraint firstItem="qAs-O4-ryt" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="aeU-Q6-yR5"/>
+            </constraints>
+            <point key="canvasLocation" x="172" y="68.5"/>
+        </customView>
+    </objects>
+</document>

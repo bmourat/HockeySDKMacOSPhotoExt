@@ -1,0 +1,16 @@
+PODS:
+  - HockeySDK-Mac (5.1.1)
+
+DEPENDENCIES:
+  - HockeySDK-Mac (= 5.1.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HockeySDK-Mac
+
+SPEC CHECKSUMS:
+  HockeySDK-Mac: 59e49aca86e4ee22c5c6ccc2d66771cfd6087f48
+
+PODFILE CHECKSUM: 4a9266b4ad669fa8168a677d285c25ced441e2f2
+
+COCOAPODS: 1.5.3
